@@ -44,7 +44,7 @@ public class VideoBroadcastPlugin implements FlutterPlugin, MethodCallHandler {
   private void send(String action){
     Intent intent = new Intent();
     intent.setAction(action);
-    intent.setComponent(new ComponentName("com.example.myapplication","com.example.myapplication.MyReceiver"));
+    intent.setComponent(new ComponentName("com.haier.haibian","com.haier.haibian.util.MyFlutterReceiver"));
     context.sendBroadcast(intent);
     System.out.println(context);
   }
